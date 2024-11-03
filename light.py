@@ -54,7 +54,7 @@ def show(item):
     CYAN = "\033[36m"
     RESET = "\033[0m"
     print(RESET)
-    print(item.description)
+    print(item.description + "\n")
     print("0:\t近光灯")
     print("1:\t远近交替")
     print("2:\t远光灯")
@@ -65,8 +65,6 @@ def show(item):
     else:
         print(RED + "Sorry\nand the right anwser is " + lightDict()[answer])
         
-
-
 def main():
     showing = getShowing()
     assert(len(showing) == 5)
